@@ -50,7 +50,7 @@ body {
 .c-lista-pokemon:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(to bottom, #88cebf 0%, #f0f0f0 100%);
+  background: linear-gradient(to bottom, #88cebf 0%, #d6d5d5 100%);
 }
 
 /* Imágenes de Pokémon con MÁS ESPACIO alrededor */
