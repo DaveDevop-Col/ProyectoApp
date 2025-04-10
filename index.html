@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoApp</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProyectoApp</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
 </head>
-
 <body>
-    <main id="app">
-    </main>
+  <main id="app">
+    <div class="c-lista">
+      <div class="c-lista-pokemon">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="bulbasaur" />
+        <p>#1</p>
+        <p>bulbasaur</p>
+      </div>
+      <div class="c-lista-pokemon">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="ivysaur" />
+        <p>#2</p>
+        <p>ivysaur</p>
+      </div>
+      <div class="c-lista-pokemon">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="venusaur" />
+        <p>#3</p>
+        <p>venusaur</p>
+      </div>
+    </div>
+  </main>
 
-    <nav class="c-nav">
-        <button onclick="mostrarLista()">lista</button>
-        <button onclick="mostrarFavoritos()">favoritos</button>
-        <button onclick="mostrarAleatorio()">aleatorios</button>
-        <button onclick="mostrarCapturados()">capturados</button>
-        <button onclick="mostrarUsuarios()">usuarios</button>
-    </nav>
+  <nav class="c-nav">
+    <button onclick="mostrarLista()">lista</button>
+    <button onclick="mostrarFavoritos()">favoritos</button>
+    <button onclick="mostrarAleatorio()">aleatorios</button>
+    <button onclick="mostrarCapturados()">capturados</button>
+    <button onclick="mostrarUsuarios()">usuarios</button>
+  </nav>
 
-    <script src="js/api.js"></script>
-    <script src="js/aleatorios.js"></script>
-    <script src="js/capturados.js"></script>
-    <script src="js/favoritos.js"></script>
-    <script src="js/lista.js"></script>
-    <script src="js/usuarios.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", General)
-    </script>
-    
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/aleatorios.js"></script>
+  <script src="js/capturados.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/lista.js"></script>
+  <script src="js/usuarios.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", General);
+  </script>
 </body>
-
 </html>

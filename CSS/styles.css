@@ -1,47 +1,70 @@
-*{
-    margin: 0;
+/* Reset básico */
+* {
     box-sizing: border-box;
-}
-
-button{
-    background-color: transparent;
-    border: unset;
-    cursor: pointer;
     margin: 0;
-    transition: 0.5s;
-}
-/* lista */
-.c-lista{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.c-lista-pokemon{
-    background-color: aliceblue;
-    width: calc(50% - 5px);
+    padding: 0;
+  }
+  
+  /* Estilos para el cuerpo */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Contenedor general de los Pokémon */
+  .c-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* Estilo individual de cada Pokémon */
+  .c-lista-pokemon {
+    background-color: white;
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
-}
-
-/* navegacion */
-.c-nav{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .c-lista-pokemon:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Imagen del Pokémon */
+  .c-lista-pokemon img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Texto debajo de la imagen */
+  .c-lista-pokemon p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Menú de navegación (opcional, si lo estás usando) */
+  .c-nav {
     position: fixed;
     bottom: 0;
-    left: 0;
-    background: silver;
     width: 100%;
+    background-color: #623b3b;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .c-nav button {
+    background-color: #fff;
+    border: none;
     padding: 10px 15px;
-    gap: 10px;
-}
-
-.c-nav-item{
-    width: calc(25% - 7.5px);
-    background-color: red;
-}
-.c-nav-item:hover{
-    color: yellow;
-}
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
